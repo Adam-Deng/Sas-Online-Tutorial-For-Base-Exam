@@ -1,0 +1,226 @@
+<html><!-- InstanceBegin template="/Templates/fillinQuestion.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+
+// Set correct answers ------------------------------------------------
+
+answer = new Array(67);
+
+answer[1] = "where company in ('ACME','RELIABLE') and pctinsured in (80,100);";
+
+answer[2] = "where company in('acme','reliable')and pctinsured in(80,100);";
+answer[3] = "where company in('acme','reliable')and pctinsured in(100,80);";
+answer[4] = "where company in('reliable','acme')and pctinsured in(80,100);";
+answer[5] = "where company in('reliable','acme')and pctinsured in(100,80);";
+answer[6] = "where pctinsured in(80,100)and company in('acme','reliable');";
+answer[7] = "where pctinsured in(80,100)and company in('reliable','acme');";
+answer[8] = "where pctinsured in(100,80)and company in('reliable','acme');";
+answer[9] = "where pctinsured in(100,80)and company in('acme','reliable');";
+
+answer[10] = "where company in('acme','reliable')& pctinsured in(80,100);";
+answer[11] = "where company in('acme','reliable')& pctinsured in(100,80);";
+answer[12] = "where company in('reliable','acme')& pctinsured in(80,100);";
+answer[13] = "where company in('reliable','acme')& pctinsured in(100,80);";
+answer[14] = "where pctinsured in(80,100)& company in('acme','reliable');";
+answer[15] = "where pctinsured in(80,100)& company in('reliable','acme');";
+answer[16] = "where pctinsured in(100,80)& company in('reliable','acme');";
+answer[17] = "where pctinsured in(100,80)& company in('acme','reliable');";
+
+answer[18] = 'where company in ("acme","reliable") and pctinsured in (80,100);';
+
+answer[19] = 'where company in("acme","reliable")and pctinsured in(80,100);';
+answer[20] = 'where company in("acme","reliable")and pctinsured in(100,80);';
+answer[21] = 'where company in("reliable","acme")and pctinsured in(80,100);';
+answer[22] = 'where company in("reliable","acme")and pctinsured in(100,80);';
+answer[23] = 'where pctinsured in(80,100)and company in("acme","reliable");';
+answer[24] = 'where pctinsured in(80,100)and company in("reliable","acme");';
+answer[25] = 'where pctinsured in(100,80)and company in("reliable","acme");';
+answer[26] = 'where pctinsured in(100,80)and company in("acme","reliable");';
+
+answer[27] = 'where company in("acme","reliable")& pctinsured in(80,100);';
+answer[28] = 'where company in("acme","reliable")& pctinsured in(100,80);';
+answer[29] = 'where company in("reliable","acme")& pctinsured in(80,100);';
+answer[30] = 'where company in("reliable","acme")& pctinsured in(100,80);';
+answer[31] = 'where pctinsured in(80,100)& company in("acme","reliable");';
+answer[32] = 'where pctinsured in(80,100)& company in("reliable","acme");';
+answer[33] = 'where pctinsured in(100,80)& company in("reliable","acme");';
+answer[34] = 'where pctinsured in(100,80)& company in("acme","reliable");';
+
+answer[35] = "where company in('acme' 'reliable')and pctinsured in(80 100);";
+answer[36] = "where company in('acme' 'reliable')and pctinsured in(100 80);";
+answer[37] = "where company in('reliable' 'acme')and pctinsured in(80 100);";
+answer[38] = "where company in('reliable' 'acme')and pctinsured in(100 80);";
+answer[39] = "where pctinsured in(80 100)and company in('acme' 'reliable');";
+answer[40] = "where pctinsured in(80 100)and company in('reliable' 'acme');";
+answer[41] = "where pctinsured in(100 80)and company in('reliable' 'acme');";
+answer[42] = "where pctinsured in(100 80)and company in('acme' 'reliable');";
+
+answer[43] = "where company in('acme' 'reliable')& pctinsured in(80 100);";
+answer[44] = "where company in('acme' 'reliable')& pctinsured in(100 80);";
+answer[45] = "where company in('reliable' 'acme')& pctinsured in(80 100);";
+answer[46] = "where company in('reliable' 'acme')& pctinsured in(100 80);";
+answer[47] = "where pctinsured in(80 100)& company in('acme' 'reliable');";
+answer[48] = "where pctinsured in(80 100)& company in('reliable' 'acme');";
+answer[49] = "where pctinsured in(100 80)& company in('reliable' 'acme');";
+answer[50] = "where pctinsured in(100 80)& company in('acme' 'reliable');";
+
+answer[51] = 'where company in ("acme" "reliable") and pctinsured in (80 100);';
+
+answer[52] = 'where company in("acme" "reliable")and pctinsured in(80 100);';
+answer[53] = 'where company in("acme" "reliable")and pctinsured in(100 80);';
+answer[54] = 'where company in("reliable" "acme")and pctinsured in(80 100);';
+answer[55] = 'where company in("reliable" "acme")and pctinsured in(100 80);';
+answer[56] = 'where pctinsured in(80 100)and company in("acme" "reliable");';
+answer[57] = 'where pctinsured in(80 100)and company in("reliable" "acme");';
+answer[58] = 'where pctinsured in(100 80)and company in("reliable" "acme");';
+answer[59] = 'where pctinsured in(100 80)and company in("acme" "reliable");';
+
+answer[60] = 'where company in("acme" "reliable")& pctinsured in(80 100);';
+answer[61] = 'where company in("acme" "reliable")& pctinsured in(100 80);';
+answer[62] = 'where company in("reliable" "acme")& pctinsured in(80 100);';
+answer[63] = 'where company in("reliable" "acme")& pctinsured in(100 80);';
+answer[64] = 'where pctinsured in(80 100)& company in("acme" "reliable");';
+answer[65] = 'where pctinsured in(80 100)& company in("reliable" "acme");';
+answer[66] = 'where pctinsured in(100 80)& company in("reliable" "acme");';
+answer[67] = 'where pctinsured in(100 80)& company in("acme" "reliable");';
+   
+// Specify text that must match case; don't delete these lines --------
+   
+   quotedString = new Array(4); 
+   quotedString[1] = "ACME";
+   quotedString[2] = "RELIABLE";
+   quotedString[3] = "";
+   quotedString[4] = "";
+  
+// Set feedback -------------------------------------------------------
+
+   right1='You specify the possible values in parentheses after each IN operator.\n';
+   right2='Character values appear as in the data set, in quotation marks.';
+   right3='';
+   
+   wrong1='List each variable name, an IN operator, and be sure to specify the\n';
+   wrong2='possible values in parentheses. Connect expressions with AND. Check\n';
+   wrong3='spelling, quotation marks, parentheses, and the case of character values.';
+   
+// Set answer checking options ----------------------------------------
+
+   var checkKeyword="yes";
+   var checkSemicolon="yes";
+   var useParens="yes";
+  
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+<body bgcolor="#FFFFF0" topmargin="0" leftmargin="0" onLoad="JavaScript: document.form1.anstext.focus()">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp; 
+      <script>setCourseTitle()</script></font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp; 
+      <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Selecting 
+      Observations<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt="">
+  </tr>
+</table><br>
+<center> <FORM NAME="form1" onSubmit="setFeedback(checkKeyword,checkSemicolon,useParens);return false">
+  
+    <table cellpadding=5 cellspacing=0 border="0" width="85%">
+      <tr valign="top"> 
+        <td width="100"> 
+          <div align="left"><img border="0" align="Top" src="../navimages/question.gif"
+	      width="89" height="60" alt="question"></div>
+        </td>
+        <td colspan="2"><!-- InstanceBeginEditable name="content" -->Write a statement to 
+          select observations for which the value of <code>Company</code> is <em>ACME</em> 
+          or <em>RELIABLE</em> and the value of the numeric variable <code>PctInsured</code> 
+          is <em>80</em> or <em>100</em>. Use the IN operator wherever possible 
+          to specify conditions.<!-- InstanceEndEditable --></td>
+    </tr>
+  </table>
+  
+  <TABLE cellpadding=5 cellspacing=0 border="0">
+      <TR>
+	    <TD colspan="2"> 
+          <P ALIGN=Center><!-- InstanceBeginEditable name="extraques" -->
+          <PRE><FONT color="#003399">     proc print data=clinic.insure;</FONT>
+<FONT color="#003399">        var id name company policy;</FONT><BR>        <INPUT TYPE="text" size="50" NAME="anstext">
+<FONT color="#003399">     run;</FONT></PRE>
+          <!-- InstanceEndEditable -->
+          </TD>
+      </TR>
+      <TR>
+	<TD colspan="2"><CENTER>
+	      <HR>
+	   <INPUT TYPE="button" NAME="checkans" value=" Check My Answer " onClick="setFeedback(checkKeyword,checkSemicolon,useParens);return false">
+	    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	    <INPUT TYPE="button" NAME="showans" value=" Show Correct Answer " onClick="showAnswer()">
+	      <HR>
+	  </CENTER>
+	 
+	</TD>
+      </TR>
+    </TABLE>
+  
+    
+  </form>
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

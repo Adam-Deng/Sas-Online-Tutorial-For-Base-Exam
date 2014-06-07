@@ -1,0 +1,161 @@
+<html><!-- InstanceBegin template="/Templates/practice.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ checkPracticeCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+
+
+solutionTitle='<strong>Solution to guided practice:</strong><p>';
+
+solutionText='Submit the following program, replacing <font color="#003399"><em>filename</em></font> with a fully qualified filename for <strong>Stresdat</strong>: ';
+solutionText+='<font color="#003399"><pre>';
+solutionText+='data _null_;<br>';
+solutionText+='   set sasuser.stress2;<br>';
+solutionText+="   file <em>'filename'</em>;<br>";
+solutionText+='   put id 1-4 name 6-19 resthr 21-22 maxhr 24-26<br>';
+solutionText+='       rechr 28-30 timemin 32-33 timesec 35-36<br>';
+solutionText+='       tolerance 38;<br>';
+solutionText+='run;<br></pre></font>';
+solutionText+='The <font color="#003399"><em>filename</em></font> specified in the FILE statement will vary based on your operating environment and the storage location you specified.';
+
+eg1Info1='Using Windows Explorer, open <strong>Stresdat</strong> in a text editor such as Notepad.<br><br>';
+eg1Info1+='<table border="0" cellpadding="2" cellspacing="0"><tr>';
+eg1Info1+='<td valign="top" width="24"><img src="../navimages/note.gif" width="20" height="20" alt="Note"></td>';
+eg1Info1+='<td valign="top">To browse this file using SAS Enterprise Guide, select ';
+eg1Info1+='<strong>File<img src="../navimages/arrow.gif" width="14" height="10" alt="then">Open</strong>. ';
+eg1Info1+='Navigate to the location where you saved the file. In the <strong>Open ';
+eg1Info1+='As </strong>drop-down list, select <strong>Note</strong>.</td></tr></table><br>';
+eg1Info2='';
+eg1Info3='';
+
+eg2Info1='Using Windows Explorer, open <strong>Stresdat</strong> in a text editor such as Notepad.<br><br>';
+eg2Info1+='<table border="0" cellpadding="2" cellspacing="0"><tr>';
+eg2Info1+='<td valign="top" width="24"><img src="../navimages/note.gif" width="20" height="20" alt="Note"></td>';
+eg2Info1+='<td valign="top">To browse this file using SAS Enterprise Guide, select ';
+eg2Info1+='<strong>File<img src="../navimages/arrow.gif" width="14" height="10" alt="then">Open</strong>. ';
+eg2Info1+='Navigate to the location where you saved the file. In the <strong>Open ';
+eg2Info1+='As </strong>drop-down list, select <strong>Note</strong>.</td></tr></table><br>';
+eg2Info2='';
+eg2Info3='';
+
+dmsInfo1='Use one of the following methods to browse the contents of <strong>Stresdat</strong>. <br><br>';
+dmsInfo1+='<ul><li>Assign a File Shortcut (or fileref) to the file. Then open it from the SAS Explorer.<br><br>';            
+dmsInfo1+='<li>Drag and drop the file into the code editing window.<br><br>';
+dmsInfo1+='<li>Open the file using a text editor.<br>';
+dmsInfo2='';
+dmsInfo3='';
+
+setInterfaceVersion();                
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0" onLoad="sizePractice()" onUnload="resizePage()">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <script>setCourseTitle()</script>
+      </font><br> 
+	  <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+      <script>setLessonTitle()</script>
+      </font></strong>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<font color="#FFFFFF" size="2"><strong>
+<script>document.write(myPage+" of "+eval(myModule))</script></strong></font>&nbsp;&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><script>writeLessonMenu()</script><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><script>writeHelpMenu()</script><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <br>
+      <table cellpadding=0 cellspacing=0 border=0 width="411" align="center">
+        <tr valign="Top"> 
+          <td width="115"><img src="../navimages/tryit.gif" alt="Try It!" width="100" height="50"></td>
+          <td align="left" valign="Top"><!-- InstanceBeginEditable name="task_description" --><strong>Write 
+      a program to write the observations in the SAS data set <a href="JavaScript: openOther('../linklib/stress2x.htm')" onMouseOver="window.status='Display a data set description and sample data.';"
+            onMouseOut="window.status=''">Sasuser.Stress2</a> to a raw data file.</strong><!-- InstanceEndEditable --></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<center>
+ <p>
+<!-- InstanceBeginEditable name="optionalNote" --><!-- InstanceEndEditable -->
+<p> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+      <td> <ol>
+          <!-- InstanceBeginEditable name="task_steps" --> 
+          <LI>Write a program to write the observations in the SAS data set <strong>Sasuser.Stress2</strong> 
+            to a raw data file named <strong>Stresdat</strong>. Save <strong>Stresdat</strong> 
+            to a location in your operating environment, specifying a path and 
+            file extension as appropriate. Specify one blank space between each 
+            field. <br>
+            <br>
+          <LI>Submit the program.<br>
+            <br>
+          <LI>Check the log to verify that the program ran correctly<CODE></CODE>. 
+            The Log window should indicate that 21 records were written from <strong>Sasuser.Stress2</strong> 
+            to <strong>Stresdat</strong>.<BR>
+            <BR>
+          <LI>
+            <script>writeInterface(docInfo1);</script></ul>
+            <!-- InstanceEndEditable --> </ol>
+      
+       </td>
+  </tr>
+</table>
+</center>
+<center>
+  <A HREF="JavaScript:openSolution(solutionTitle+solutionText)" onMouseOver="window.status='Display the solution to the practice.';return true"
+      onMouseOut="window.status='';return true"><IMG SRC="../navimages/bulby.gif" ALT="Solution"
+      WIDTH="60" HEIGHT="60" border="0"></A> <br>
+  <br>
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

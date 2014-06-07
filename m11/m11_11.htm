@@ -1,0 +1,213 @@
+<html><!-- InstanceBegin template="/Templates/practice.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ checkPracticeCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+solutionTitle='<strong>Solution to guided practice:</strong><p>';
+dmsSolutionText='The following program is an example. ';
+dmsSolutionText+='Many variations are possible.';
+dmsSolutionText+='<font color="#003399"><pre>';
+dmsSolutionText+='ods listing close;<br>';
+dmsSolutionText+='ods html path=\'c:\\data\' body=\'active.html\';<br>';
+dmsSolutionText+='proc tabulate data=sasuser.admit format=4.1;<br>';
+dmsSolutionText+='   var age;<br>';
+dmsSolutionText+='   class sex actlevel / style={background=white};<br>';
+dmsSolutionText+='   table sex*actlevel*age,mean /<br>';
+dmsSolutionText+='         box={style={background=ltgray}};<br>';
+dmsSolutionText+='   keyword mean / style={background=white};<br>';
+dmsSolutionText+='run;<br>';
+dmsSolutionText+='ods html close;<br>';
+dmsSolutionText+='ods listing;<br></pre></font>';
+
+eg1SolutionText='The following program is an example. ';
+eg1SolutionText+='Many variations are possible.';
+eg1SolutionText+='<font color="#003399"><pre>';
+eg1SolutionText+='ods listing close;<br>';
+eg1SolutionText+='ods html path=\'c:\\data\' body=\'active.html\';<br>';
+eg1SolutionText+='proc tabulate data=sasuser.admit format=4.1;<br>';
+eg1SolutionText+='   var age;<br>';
+eg1SolutionText+='   class sex actlevel / style={background=white};<br>';
+eg1SolutionText+='   table sex*actlevel*age,mean /<br>';
+eg1SolutionText+='         box={style={background=ltgray}};<br>';
+eg1SolutionText+='   keyword mean / style={background=white};<br>';
+eg1SolutionText+='run;<br>';
+eg1SolutionText+='ods html close;<br>';
+eg1SolutionText+='ods listing;<br></pre></font>';
+eg1SolutionText+='<br>Using Windows Explorer, locate the HTML file you created and open it in your browser.';
+
+eg2SolutionText='The following program is an example. ';
+eg2SolutionText+='Many variations are possible.';
+eg2SolutionText+='<font color="#003399"><pre>';
+eg2SolutionText+='ods listing close;<br>';
+eg2SolutionText+='ods html path=\'c:\\data\' body=\'active.html\';<br>';
+eg2SolutionText+='proc tabulate data=sasuser.admit format=4.1;<br>';
+eg2SolutionText+='   var age;<br>';
+eg2SolutionText+='   class sex actlevel / style={background=white};<br>';
+eg2SolutionText+='   table sex*actlevel*age,mean /<br>';
+eg2SolutionText+='         box={style={background=ltgray}};<br>';
+eg2SolutionText+='   keyword mean / style={background=white};<br>';
+eg2SolutionText+='run;<br>';
+eg2SolutionText+='ods html close;<br>';
+eg2SolutionText+='ods listing;<br></pre></font>';
+eg2SolutionText+='<br>Using Windows Explorer, locate the HTML file you created and open it in your browser.';
+
+dmsInfo1=' ';
+dmsInfo2='';
+dmsInfo3='';
+
+eg1Info1='<table cellpadding=2 cellspacing=0 border=0 width="85%"><tr valign="Top"> ';
+eg1Info1+='<td width="24"><img src="../navimages/alert.gif" width="37" height="32" alt="Caution:" border="0"></td>';
+eg1Info1+='<td align="left">Have you <a href="JavaScript: ';
+eg1Info1+="openOther('../linklib/eg_ods.htm')";
+eg1Info1+='">set options</a> in Enterprise ';
+eg1Info1+='Guide so you can submit your own ODS statements? You must do this before ';
+eg1Info1+='you can do any of the practices in this lesson.</td></tr></table>';
+eg1Info2='';
+eg1Info3='';
+
+eg2Info1='<table cellpadding=2 cellspacing=0 border=0 width="85%"><tr valign="Top"> ';
+eg2Info1+='<td width="24"><img src="../navimages/alert.gif" width="37" height="32" alt="Caution:" border="0"></td>';
+eg2Info1+='<td align="left">Have you <a href="JavaScript: ';
+eg2Info1+="openOther('../linklib/eg2_ods.htm')";
+eg2Info1+='">set options</a> in Enterprise ';
+eg2Info1+='Guide so you can submit your own ODS statements? You must do this before ';
+eg2Info1+='you can do any of the practices in this lesson.</td></tr></table>';
+eg2Info2='';
+eg2Info3='';
+
+
+setInterfaceVersion();
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0" onLoad="sizePractice()" onUnload="resizePage()">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <script>setCourseTitle()</script>
+      </font><br> 
+	  <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+      <script>setLessonTitle()</script>
+      </font></strong>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<font color="#FFFFFF" size="2"><strong>
+<script>document.write(myPage+" of "+eval(myModule))</script></strong></font>&nbsp;&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><script>writeLessonMenu()</script><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><script>writeHelpMenu()</script><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <br>
+      <table cellpadding=0 cellspacing=0 border=0 width="411" align="center">
+        <tr valign="Top"> 
+          <td width="115"><img src="../navimages/tryit.gif" alt="Try It!" width="100" height="50"></td>
+          <td align="left" valign="Top"><!-- InstanceBeginEditable name="task_description" --><strong>Using 
+      the <a href="JavaScript: openOther('../linklib/admit.htm')" onMouseOver="window.status='Display a data set description and sample data.';"
+	    onMouseOut="window.status=''">Sasuser.Admit</a> data set, apply styles 
+      to heading cells.</strong><!-- InstanceEndEditable --></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<center>
+ <p>
+<!-- InstanceBeginEditable name="optionalNote" --><script>writeInterface(docInfo1);</script><!-- InstanceEndEditable -->
+<p> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td> 
+      <ol>
+          <!-- InstanceBeginEditable name="task_steps" --> 
+          <LI>Copy the following program and paste it into the code editing window. 
+            <PRE><FONT COLOR="#003399">ods listing close;</FONT>
+<FONT COLOR="#003399">ods html path='<FONT color="red"><STRONG>?</STRONG></FONT>' body='<FONT color="red"><STRONG>?</STRONG></FONT>';</FONT>
+<FONT COLOR="#003399">proc tabulate data=sasuser.admit </FONT>
+<FONT COLOR="#003399">     format=4.1;</FONT>
+<FONT COLOR="#003399">   var age;</FONT>
+<FONT COLOR="#003399">   class sex actlevel;</FONT>
+<FONT COLOR="#003399">   table sex*actlevel*age,mean;</FONT>
+<FONT COLOR="#003399">run;</FONT>
+<FONT COLOR="#003399">ods html close;</FONT>
+<FONT COLOR="#003399">ods listing;</FONT></PRE>
+          <LI> Replace the question marks (<FONT COLOR="Red"><STRONG>?</STRONG></FONT>) 
+            with PATH= and BODY= values that conform to your operating system's 
+            file structure. Remember that you can use the URL= suboption in PATH=, 
+            BODY=, or both.<BR>
+            <BR>
+          <LI> Submit the program and view the HTML table in your browser.<BR>
+            <BR>
+          <LI> Add the STYLE= option to the program's CLASS statement to change 
+            the background color of the <CODE>Sex</CODE> and <CODE>ActLevel</CODE> 
+            headings to <strong>white</strong>. Remember to add a slash (/) before 
+            the option. 
+            <P> 
+          <LI> Insert a KEYWORD statement to change the background color of the 
+            MEAN statistic to <strong>white</strong>. Remember to add a slash 
+            before the STYLE= option. 
+            <P> 
+          <LI> Add the BOX= option to the TABLE statement to change the background 
+            color of the upper-left cell to <strong>ltgray</strong> (you could 
+            also use <em>CCCCCC</em>). Remember to add a slash before the BOX= 
+            option and to enclose the entire STYLE= option in braces. 
+            <P> 
+          <LI> Submit the program and view the results in your browser. <!-- InstanceEndEditable --> 
+        </ol>
+      
+       </td>
+  </tr>
+</table>
+</center>
+<center>
+  <A HREF="JavaScript:openSolution(solutionTitle+solutionText)" onMouseOver="window.status='Display the solution to the practice.';return true"
+      onMouseOut="window.status='';return true"><IMG SRC="../navimages/bulby.gif" ALT="Solution"
+      WIDTH="60" HEIGHT="60" border="0"></A> <br>
+  <br>
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

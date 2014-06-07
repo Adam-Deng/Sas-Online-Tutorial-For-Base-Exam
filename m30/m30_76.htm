@@ -1,0 +1,193 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" -->
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Modifying 
+      Character Values with Functions<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td>
+<p><strong>TRIM Function</strong> (continued)</p>
+      <p>The TRIM function enables you to remove trailing blanks from character 
+        values.</p></td>
+  </tr>
+</table>
+<P align="center">&nbsp; 
+<center>
+  <TABLE width="85%" BORDER="1" CELLPADDING="10" CELLSPACING="0" bgcolor="#F7F7DE" title="General form, TRIM function">
+    <TR> 
+      <TD align="left"><STRONG>General form, TRIM function:</STRONG> <BLOCKQUOTE> 
+          <FONT color="#003399"><nobr><STRONG>TRIM(</STRONG><EM>argument</EM><strong>)</strong></nobr></FONT> 
+        </BLOCKQUOTE>
+        <P> where <FONT color="#003399"><EM>argument</EM></FONT> can be any character 
+          expression, such as 
+        <UL>
+          <LI> a character variable: <FONT color="#003399"><TT>trim(address)</TT></FONT> 
+          <LI> another character function: <FONT color="#003399"><TT>trim(left(id))</TT></FONT>. 
+        </UL></TD>
+    </TR>
+  </table>
+</center>
+<P align="center"> <BR>
+<center>
+  <TABLE cellpadding="0" cellspacing="0" border="0" width="85%">
+    <TR> 
+      <TD>To remove the blanks from the variable <CODE>NewAddress</CODE>, include 
+        the TRIM function in your assignment statement. Trim the values of <CODE>Address</CODE> 
+        and <CODE>City</CODE>. 
+        <PRE>
+     <FONT color="#003399">data hrd.newtemp(drop=address city state zip);</FONT>
+        <FONT color="#003399">set hrd.temp;</FONT>
+        <FONT color="#003399">NewAddress=<STRONG>trim(address)</STRONG>||', '||<STRONG>trim(city)</STRONG>||', '||zip;</FONT>
+     <FONT color="#003399">run;</FONT>
+</PRE>
+        <P> The revised DATA step creates the values that you expect for <CODE>NewAddress</CODE>. 
+      </TD>
+    </TR>
+  </TABLE>
+</center>
+<P align="center"> <BR>
+  SAS Data Set Hrd.Newtemp 
+<center>
+  <TABLE align="center" bgcolor="#CCCCCC" border="1" cellpadding="3" cellspacing="0" frame="box" title="SAS Data Set">
+    <thead>
+<TR valign="top">
+        <TD align="center" bgcolor="#F7F7DE"><font face="Verdana, Arial, Helvetica" size="2" color="#000000"><b>NewAddress</b></font></TD>
+</TR>
+</thead>
+<tbody>
+<TR valign="top">
+<TD bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica" size="2" color="#000000">65 ELM DRIVE, CARY, 27513</font></TD>
+</TR><TR valign="top">
+<TD bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica" size="2" color="#000000">11 SUN DRIVE, CARY, 27513</font></TD>
+</TR><TR valign="top">
+<TD bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica" size="2" color="#000000">712 HARDWICK STREET, CHAPEL HILL, 27514</font></TD>
+</TR><TR valign="top">
+<TD bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica" size="2" color="#000000">5372 WHITEBUD ROAD, RALEIGH, 27612</font></TD>
+</TR>
+</tbody>
+</table></center>
+<P align="center"> <BR>
+<center>
+  <TABLE cellpadding="0" cellspacing="0" border="0" width="85%">
+    <TR> 
+      <TD><STRONG>Points to Remember</STRONG> <P> Keep in mind that the TRIM function 
+          does not affect how a variable is stored. Suppose you trim the values 
+          of a variable and then assign these values to a new variable. The trimmed 
+          values are padded with trailing blanks again if the values are shorter 
+          than the length of the new variable. 
+        <P> Here's an example. In the DATA step below, the trimmed value of <code>Address</code> 
+          is assigned to the new variable <CODE>Street</CODE>. When the trimmed 
+          value is assigned to <CODE>Street</CODE>, trailing blanks are added 
+          to the value to match the length of 20. 
+        <PRE>
+     <FONT color="#003399">data temp;</FONT>
+        <FONT color="#003399">set hrd.temp;</FONT>
+        <FONT color="#003399">length Street $ 20;</FONT>
+        <FONT color="#003399">Street=trim(address);</FONT>
+     <FONT color="#003399">run;</FONT>
+</PRE></TD>
+    </TR>
+  </TABLE>
+</center>
+<P align="center"> 
+<center>
+  <TABLE align="center" bgcolor="#CCCCCC" border="1" cellpadding="3" cellspacing="0" frame="box" title="SAS Data Set">
+    <thead>
+      <TR valign="top" bgcolor="#F7F7DE"> 
+        <TD align="center"><font face="Verdana,Arial,Helvetica" size="2" color="#000000"><b>Address</b><FONT size="1"><BR>
+          length=32</FONT></font></TD>
+        <TD align="center"><font face="Verdana,Arial,Helvetica" size="2" color="#000000"><b>Street</b><FONT size="1"><BR>
+          length=20</FONT></font></TD>
+</TR>
+</thead>
+<tbody>
+<TR valign="top">
+<TD bgcolor="#FFFFFF"><TT>65 ELM DRIVE<FONT color="#999999">&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</FONT></TT></TD>
+<TD bgcolor="#FFFFFF"><TT>65 ELM DRIVE<FONT color="#999999">&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</FONT></TT></TD>
+</TR><TR valign="top">
+<TD bgcolor="#FFFFFF"><TT>11 SUN DRIVE<FONT color="#999999">&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</FONT></TT></TD>
+<TD bgcolor="#FFFFFF"><TT>11 SUN DRIVE<FONT color="#999999">&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</FONT></TT></TD>
+</TR><TR valign="top">
+<TD bgcolor="#FFFFFF"><TT>712 HARTWICK STREET<FONT color="#999999">&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</FONT></TT></TD>
+<TD bgcolor="#FFFFFF"><TT>712 HARTWICK STREET<FONT color="#999999">&middot;</FONT></TT></TD>
+</TR>
+</tbody>
+</table><BR>
+  <BR>
+</center>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

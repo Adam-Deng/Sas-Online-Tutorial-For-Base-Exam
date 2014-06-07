@@ -1,0 +1,151 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" -->
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Converting 
+      Data with Functions<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+      <td> 
+        <p><STRONG>Automatic 
+        Numeric-to-Character Conversion</STRONG> </p>
+      <P> The automatic conversion of numeric data to character data is very similar 
+        to character-<WBR>to-<WBR>numeric conversion. Numeric data values are 
+        converted to character values whenever they are used in a <STRONG>character 
+        context</STRONG>. 
+      <P> For example, the numeric values of the variable <CODE>Site</CODE> are 
+        converted to character values if you 
+      <UL>
+        <LI>assign the numeric value to a previously defined character variable, 
+          such as the character variable <CODE>SiteCode</CODE>: <NOBR><TT><FONT color="#003399">SiteCode=site;</FONT></TT></NOBR> 
+          <BR>
+          <BR>
+        <LI>use the numeric value with an operator that requires a character value, 
+          such as the concatenation operator: <NOBR><TT><FONT color="#003399">SiteCode=site||dept;</FONT></TT></NOBR> 
+          <BR>
+          <BR>
+          <LI>specify the numeric value in a function that requires character 
+            arguments, such as the SUBSTR function: <NOBR><TT><FONT color="#003399">Region=substr(site,1,4);</FONT></TT></NOBR> 
+        </UL>
+        <P>Specifically, SAS writes the numeric value with the BEST12. format, 
+          and the resulting character value is right-aligned. This conversion 
+          occurs before the value is assigned or used with any operator or function. 
+          Automatic numeric-to-character conversion can cause unexpected results. 
+          For example, suppose the original numeric value has fewer than 12 digits. 
+          The resulting character value will have leading blanks, which might 
+          cause problems when you perform an operation or function. 
+        <P>Numeric-to-character conversion also causes a message to be written 
+          to the SAS log indicating that the conversion has occurred.</td>
+  </tr>
+</table>
+<P align="center"><BR>
+  SAS Log 
+<center>
+  <TABLE width="450" BORDER="1" cellpadding="10" cellspacing="0" bgcolor="#F7F7DE" title="SAS Log">
+    <TR> 
+      <TD> <PRE>9    data hrd.newtemp;
+10      set hrd.temp;
+11      SiteCode=site;
+12   run;
+
+<STRONG>NOTE: Numeric values have been converted
+      to character values at the
+      places given by: (Line):(Column).
+
+      11:13</STRONG>
+
+<NOBR>NOTE: The data set HRD.NEWTEMP has 40 observations</NOBR>
+      and 19 variables.
+NOTE: The data statement used 1.06 seconds.
+</PRE></TD>
+    </TR>
+  </table>
+</center>
+<P align="center">&nbsp; 
+<center>
+  <TABLE cellpadding="0" cellspacing="0" border="0" width="85%">
+    <TR> 
+      <TD>As we saw with the INPUT statement, it is best not to rely on automatic 
+        conversion. When you know that numeric data must be converted to character 
+        data, perform an explicit conversion by including a PUT function in your 
+        SAS program. We look at the PUT function in the next section.</TD>
+    </TR>
+  </TABLE>
+  <br>
+  <br>
+</center>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

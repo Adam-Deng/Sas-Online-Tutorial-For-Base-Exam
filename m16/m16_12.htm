@@ -1,0 +1,251 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" -->
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br>
+      <font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Viewing 
+      SAS Libraries<!-- InstanceEndEditable --></strong></font> <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+  <table width="85%" border="0" cellpadding="0" cellspacing="0">
+    <tr valign="top"> 
+      <td> <p><strong>Using PROC DATASETS</strong></p>
+        <p>In addition to PROC CONTENTS, you can also use <strong>PROC DATASETS</strong> 
+          to view the contents of a SAS library or a SAS data set. PROC DATASETS 
+          also enables you to perform a number of management tasks such as copying, 
+          deleting, or modifying SAS files.</p>
+        <p>PROC CONTENTS and PROC DATASETS overlap in terms of functionality. 
+          Generally, these two function the same:</p>
+        <ul>
+          <li>the <strong>CONTENTS procedure</strong> </li>
+          <li>the <strong>CONTENTS statement in the DATASETS procedure</strong>. 
+          </li>
+        </ul></td>
+    </tr>
+  </table>
+  <br>
+  <table cellpadding="5" cellspacing="0" border="0">
+    <tr valign="top"> 
+      <td bgcolor="#F7F7DE"> <p><font color="#003399"><strong>PROC <font color="#FF0000">CONTENTS 
+          </font></strong><font color="#FF0000">&lt;<em>options</em>&gt;</font>;<br>
+          <strong>RUN</strong>; </font></p></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td bgcolor="#F7F7DE"> <p><font color="#003399"><strong>PROC DATASETS </strong>&lt;<em>options</em>&gt;;<br>
+          </font><font color="#003399"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">CONTENTS 
+          </font></strong><font color="#FF0000">&lt;<em>options</em>&gt;</font>;<br>
+          <strong>QUIT;</strong></font></p></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td><p>The major difference between the CONTENTS procedure and the CONTENTS 
+          statement in PROC DATASETS is the default for <font color="#003399"><em>libref</em></font> 
+          in the DATA= option. For PROC CONTENTS, the default is either <strong>Work</strong> 
+          or <strong>User</strong>. For the CONTENTS statement, the default is 
+          the libref of the procedure input library. Notice also that PROC DATASETS 
+          is an interactive procedure that requires a QUIT statement rather than 
+          a RUN statement.</p>
+        <p>However, the options for the PROC CONTENTS statement and the CONTENTS 
+          statement in the DATASETS procedure are the same. For example, the following 
+          PROC steps produce essentially the same output (with minor formatting 
+          differences):</p>
+        <pre><font color="#003399">     proc datasets;
+        contents data=sasuser._all_ nods;
+     quit;</font></pre> <pre><font color="#003399">     proc contents data=sasuser._all_ nods;
+     run;</font></pre> 
+        <table border="0" cellpadding="2" cellspacing="0">
+          <tr> 
+            <td valign="top" width="24"><img src="../navimages/note.gif" width="20" height="20" alt="Note"></td>
+            <td valign="top"> In addition to the the CONTENTS statement, PROC 
+              DATASETS also uses several other statements. These statements enable 
+              you to perform tasks that PROC CONTENTS does not perform. For more 
+              information about PROC DATASETS, see the 
+              <!--doc reference-->
+              SAS documentation.</td>
+          </tr>
+        </table>
+        <p><br>
+          <strong>Viewing Descriptor Information for a SAS Data Set Using VARNUM</strong></p>
+        <p>As with PROC CONTENTS, you can also use PROC DATASETS to display the 
+          descriptor information for a specific SAS data set. </p>
+        <p>By default, PROC CONTENTS and PROC DATASETS list variables <strong>alphabetically</strong>. 
+          To list variable names in the order of their <strong>logical</strong> 
+          position (or creation order) in the data set, you can specify the <strong>VARNUM 
+          option</strong> in PROC CONTENTS or in the CONTENTS statement in PROC 
+          DATASETS. </p>
+        <p>For example, either of these programs creates output that includes 
+          the list of variables shown below:</p>
+        <pre><font color="#003399">     proc datasets;
+        contents data=sasuser.admit <strong>varnum</strong>;
+     quit;</font></pre>
+        <pre><font color="#003399">     proc contents data=sasuser.admit <strong>varnum</strong>;
+     run;</font></pre></td>
+    </tr>
+  </table>
+  <br>
+  <table border="1px" cellpadding="2" cellspacing="1" bordercolor="#000000" bgcolor="#fffff0" frame="box" rules="groups" class="Table" summary="Procedure Contents: Varnum">
+    <colgroup>
+    <col>
+    </colgroup>
+    <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+    </colgroup>
+    <thead>
+      <tr bgcolor="#CCCCCC"> 
+        <th colspan="5" class=" b Header" scope="colgroup"><font color="#0033aa">Variables 
+          in Creation Order</font></th>
+      </tr>
+      <tr bgcolor="#CCCCCC"> 
+        <th class="r b Header" scope="col"><font color="#0033aa">#</font></th>
+        <th class="l b Header" scope="col"><font color="#0033aa">Variable</font></th>
+        <th class="l b Header" scope="col"><font color="#0033aa">Type</font></th>
+        <th class="r b Header" scope="col"><font color="#0033aa">Len</font></th>
+        <th class="l b Header" scope="col"><font color="#0033aa">Format</font></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">1</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">ID</td>
+        <td bgcolor="#EFEFEF" class=" Data">Char</td>
+        <td bgcolor="#EFEFEF" class="r Data">4</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">2</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Name</td>
+        <td bgcolor="#EFEFEF" class=" Data">Char</td>
+        <td bgcolor="#EFEFEF" class="r Data">14</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">3</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Sex</td>
+        <td bgcolor="#EFEFEF" class=" Data">Char</td>
+        <td bgcolor="#EFEFEF" class="r Data">1</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">4</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Age</td>
+        <td bgcolor="#EFEFEF" class=" Data">Num</td>
+        <td bgcolor="#EFEFEF" class="r Data">8</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">5</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Date</td>
+        <td bgcolor="#EFEFEF" class=" Data">Num</td>
+        <td bgcolor="#EFEFEF" class="r Data">8</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">6</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Height</td>
+        <td bgcolor="#EFEFEF" class=" Data">Num</td>
+        <td bgcolor="#EFEFEF" class="r Data">8</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">7</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Weight</td>
+        <td bgcolor="#EFEFEF" class=" Data">Num</td>
+        <td bgcolor="#EFEFEF" class="r Data">8</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">8</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">ActLevel</td>
+        <td bgcolor="#EFEFEF" class=" Data">Char</td>
+        <td bgcolor="#EFEFEF" class="r Data">4</td>
+        <td bgcolor="#EFEFEF" class=" Data">&nbsp;</td>
+      </tr>
+      <tr> 
+        <th bgcolor="#CCCCCC" class="r RowHeader" scope="row"><font color="#0033aa">9</font></th>
+        <td bgcolor="#EFEFEF" class=" Data">Fee</td>
+        <td bgcolor="#EFEFEF" class=" Data">Num</td>
+        <td bgcolor="#EFEFEF" class="r Data">8</td>
+        <td bgcolor="#EFEFEF" class=" Data">7.2</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><br>
+  </p>
+  <p> <!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

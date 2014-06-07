@@ -1,0 +1,193 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Debugging 
+      a DATA Step<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td>
+<p>The PRINT procedure displays the data set, showing that the values for 
+        <code>IDnum</code> are missing. In this example, the periods indicate 
+        that <code>IDnum</code> is a numeric variable, although it should be defined 
+        as a character variable. </p>
+      <pre><font color="#003399">     proc print data=perm.update;</font>
+<font color="#003399">     run;</font></pre>
+    </td>
+  </tr>
+</table>
+<p align="center"> 
+<center>
+  <table border="1" cellpadding="2" cellspacing="1" rules="groups" frame="box"
+  bordercolor="#000000" bgcolor="#FFFFF0">
+    <thead> 
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>Obs</b></font></td>
+      <td align="left" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>Item</b></font></td>
+      <td align="center" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>IDnum</b></font></td>
+      <td align="right" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>InStock</b></font></td>
+      <td align="right" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>BackOrd</b></font></td>
+      <td align="right" bgcolor="#CCCCCC"><font face="Arial, Helvetica, Helv" size="3" color="#0033AA"><b>Total</b></font></td>
+    </tr>
+    </thead> <tbody> 
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">1</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Bird 
+        Feeder</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">3</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">20</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">23</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">2</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">6 
+        Glass Mugs</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">6</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">12</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">18</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">3</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Glass 
+        Tray</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">12</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">6</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">18</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">4</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><nobr>Padded 
+        Hangrs</nobr></font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">15</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">20</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">35</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">5</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Jewelry 
+        Box</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">23</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">0</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">23</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">6</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Red 
+        Apron</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">9</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">12</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">21</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">7</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Crystal 
+        Vase</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">27</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">0</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">27</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">8</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Picnic 
+        Basket</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">21</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">0</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">21</font></td>
+    </tr>
+    <tr> 
+      <td align="center" bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, Helv" size="3" color="#0033AA">9</font></b></td>
+      <td align="left" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">Brass 
+        Clock</font></td>
+      <td align="center" bgcolor="#FFFF9C"><font face="Arial, Helvetica, Helv" size="2" color="#000000"><b>.</b></font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">2</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">10</font></td>
+      <td align="right" bgcolor="#EFEFEF"><font face="Arial, Helvetica, Helv" size="2" color="#000000">12</font></td>
+    </tr>
+    </tbody> 
+  </table>
+  <br>
+  <br>
+</center>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

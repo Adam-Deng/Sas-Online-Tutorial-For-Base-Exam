@@ -1,0 +1,296 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Applying 
+      the STYLE= Option<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td>
+<p>If you completed the lesson 
+        <!--lesson reference-->
+        <strong><script>document.write(m18title);</script></strong>, you learned how to specify styles 
+        for HTML output, using the <strong>STYLE= option</strong> to change the 
+        appearance of your output. Although that lesson discussed the PRINT procedure, 
+        the STYLE= option also works with PROC TABULATE:</p>
+    </td>
+  </tr>
+</table>
+<p align="center"> <br>
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td width="33%"> 
+        <pre><font color="#003399">     ods listing close;</font>
+<font color="#003399">     ods html path='c:\data'(url=none)
+         body='table.html' <strong>style=brick</strong>;</font>
+<font color="#003399">     proc tabulate data=clinic.admit;</font>
+<font color="#003399">        var fee;</font>
+<font color="#003399">        class sex;</font>
+<font color="#003399">        table sex all,fee;</font>
+<font color="#003399">     run;</font>
+<font color="#003399">     ods html close;</font>
+<font color="#003399">     ods listing;</font>
+</pre>
+      </td>
+      <td width="67%"> 
+        <table cellspacing="1" border="1" cellpadding="2" rules="GROUPS"
+	frame="BOX" bgcolor="#EFEFEF" bordercolor="#000000" title="ODS HTML output">
+          <thead> 
+          <tr> 
+            <td rowspan=2 align=CENTER bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv"
+		    size="3" color="#A70000"><b>&nbsp;</b></font></td>
+            <td align=CENTER bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv" size="3"
+		    color="#A70000"><b>Fee</b></font></td>
+          </tr>
+          <tr> 
+            <td align=CENTER bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv" size="3"
+		    color="#A70000"><b>Sum</b></font></td>
+          </tr>
+          </thead> <tbody> 
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv"
+		    size="3" color="#A70000"><b>Sex</b></font></td>
+            <td rowspan=2 align=RIGHT valign=BOTTOM bgcolor="#8F8F8F"><font face="Arial, Helvetica, Helv"
+		    size="2" color="#FFFFFF"> 1418.35</font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv"
+		    size="3" color="#A70000"><b>F</b></font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv"
+		    size="3" color="#A70000"><b>M</b></font></td>
+            <td align=RIGHT valign=BOTTOM bgcolor="#8F8F8F"><font face="Arial, Helvetica, Helv"
+		    size="2" color="#FFFFFF"> 1268.60</font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#D1D1D1"><font face="Arial, Helvetica, Helv"
+		    size="3" color="#A70000"><b>All</b></font></td>
+            <td align=RIGHT valign=BOTTOM bgcolor="#8F8F8F"><font face="Arial, Helvetica, Helv"
+		    size="2" color="#FFFFFF"> 2686.95</font></td>
+          </tr>
+          </tbody> <tfoot> </tfoot> 
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="67%"> 
+        <pre><font color="#003399">     ods listing close;</font>
+<font color="#003399">     ods html path='c:\data'</font><font color="#003399">(url=none)</font>
+<font color="#003399">         body='table.html' <strong>style=brown</strong>;</font>
+<font color="#003399">     proc tabulate data=clinic.admit;</font>
+<font color="#003399">        var fee;</font>
+<font color="#003399">        class sex;</font>
+<font color="#003399">        table sex all,fee;</font>
+<font color="#003399">     run;</font>
+<font color="#003399">     ods html close;</font>
+<font color="#003399">     ods listing;</font>
+</pre>
+      </td>
+      <td width="33%"> 
+        <table cellspacing="0" border="1" cellpadding="2" rules="all"
+	frame="Box" bgcolor="#D7CCC7" bordercolor="#000000" title="ODS HTML output">
+          <thead> 
+          <tr> 
+            <td rowspan=2 align=CENTER bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>&nbsp;</b></font></td>
+            <td align=CENTER bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>Fee</b></font></td>
+          </tr>
+          <tr> 
+            <td align=CENTER bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>Sum</b></font></td>
+          </tr>
+          </thead> <tbody> 
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>Sex</b></font></td>
+            <td rowspan=2 align=RIGHT valign=BOTTOM bgcolor="#D7CCC7" bordercolorlight="#A7978F"
+	      bordercolordark="#D7CCC7"><font face="Arial, Helvetica, Helv" size="2" color="#000000"> 
+              1418.35</font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>F</b></font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>M</b></font></td>
+            <td align=RIGHT valign=BOTTOM bgcolor="#D7CCC7" bordercolorlight="#A7978F"
+	      bordercolordark="#D7CCC7"><font face="Arial, Helvetica, Helv" size="2" color="#000000"> 
+              1268.60</font></td>
+          </tr>
+          <tr> 
+            <td align=LEFT valign=TOP bgcolor="#A7978F" bordercolorlight="#000000" bordercolordark="#D7CCC7"><font
+		    face="Arial, Helvetica, Helv" size="3" color="#000000"><b>All</b></font></td>
+            <td align=RIGHT valign=BOTTOM bgcolor="#D7CCC7" bordercolorlight="#A7978F"
+	      bordercolordark="#D7CCC7"><font face="Arial, Helvetica, Helv" size="2" color="#000000"> 
+              2686.95</font></td>
+          </tr>
+          </tbody> <tfoot> </tfoot> 
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> <br>
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>When you specify the STYLE= option in an ODS HTML statement, the specified 
+        style controls the overall appearance of your output. But you can use 
+        the STYLE= option <strong>within</strong> PROC TABULATE to change the 
+        appearance of individual <strong>rows</strong>, <strong>columns</strong>, 
+        and <strong>cells</strong>.</td>
+    </tr>
+  </table>
+</center>
+<p align="center"> <br>
+<center>
+  <table border="1" cellspacing="0" cellpadding="10" width="85%" bgcolor="#F7F7DE" title="General form, STYLE= option within PROC TABULATE">
+    <tr> 
+      <td><strong>General form, STYLE= option within PROC TABULATE:</strong> 
+        <blockquote> 
+          <dl> 
+            <dt> <font color="#003399"><strong>STYLE=</strong>&lt;<em>style-name</em>&gt; 
+              &lt;<strong>&lt;parent&gt;</strong>&gt;</font> 
+            <dd> <nobr><font color="#003399"><strong>{</strong>&lt;<em>attribute-1=value</em>&gt; 
+              &lt;...<em>attribute-n=value</em>&gt;<strong>}</strong></font></nobr> 
+          </dl>
+        </blockquote>
+        <p> where 
+        <ul>
+          <li> <font color="#003399"><em>style-name</em></font> refers to a predefined 
+            style 
+          <li> <font color="#003399">&lt;parent&gt;</font> applies the style attributes 
+            of the nesting cell 
+          <li> <font color="#003399"><em>attribute</em></font> specifies a style 
+            attribute to change, such as 
+            <p> 
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td>foreground</td>
+                <td>font_face</td>
+              </tr>
+              <tr> 
+                <td>background</td>
+                <td>font_size</td>
+              </tr>
+              <tr> 
+                <td>backgroundimage&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>font_style</td>
+              </tr>
+              <tr> 
+                <td>flyover</td>
+                <td>font_weight</td>
+              </tr>
+            </table>
+        </ul>
+        <table cellpadding="2">
+          <tr valign="top"> 
+            <td width="24"><img border="0" src="../navimages/note.gif" alt="Note:" width="20" height="20"></td>
+            <td>You can shorten the keyword <strong>style</strong> to <strong>s</strong> 
+              in your programs: <nobr><tt><font color="#003399"><br>
+              <br>
+              s={background=yellow}</font></tt></nobr><br>
+              <br>
+              Also, you can use square brackets [ ] instead of braces {} to enclose 
+              attributes and values: <br>
+              <br>
+              <nobr><tt><font color="#003399">s=[background=cyan]</font></tt></nobr></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> <br>
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>Because you can apply the STYLE= option to any part of your table, it 
+        provides a great amount of creative control.</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+</center>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,92 @@
+<html><!-- InstanceBegin template="/Templates/popup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<link rel="stylesheet" href="../tut.css">
+
+<!-- InstanceBeginEditable name="title" --> 
+<TITLE>Conversion of SAS Variable Names to DBMS Column Names</TITLE>
+<!-- InstanceEndEditable -->
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+<body bgcolor="#FFFFF0" topmargin="0" leftmargin="0" onLoad="self.focus()">
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td><br>
+      <strong><font size="3" color="#003399"><!-- InstanceBeginEditable name="popup_title" -->Conversion 
+      of SAS Variable Names to DBMS Column Names <!-- InstanceEndEditable --></font></strong> </td>
+</tr>
+</table><p> 
+<!-- InstanceBeginEditable name="contents" -->
+<p> 
+<center>
+  <table bgcolor="#FFFFFF" border="1" cellpadding="2" cellspacing="0" width="85%"
+  align="Center" title="SAS Variable to DBMS Column Name Conversion">
+    <tr bgcolor="#F7F7DE"> 
+      <td><strong>Current SAS Variable Name</strong></td>
+      <td><strong>Desired DBMS Column Name</strong></td>
+      <td><strong>Required LIBNAME Option</strong></td>
+    </tr>
+    <tr valign="top"> 
+      <td width="33%">any SAS variable name, such as <code>Miles</code></td>
+      <td width="34%">default DBMS column name (following DBMS naming conventions), 
+        such as MILES</td>
+      <td width="33%"><font color="#003399"><code>preserve_col_names=no</code></font></td>
+    </tr>
+    <tr valign="top"> 
+      <td>case-sensitive SAS variable name, such as <code>Miles</code></td>
+      <td>case-sensitive DBMS column name, such as Miles</td>
+      <td><font color="#003399"><code>preserve_col_names=yes</code></font></td>
+    </tr>
+  </table>
+  <p> 
+  <TABLE width="85%" CELLPADDING="2">
+    <TR VALIGN="Top"> 
+      <TD width="24"><IMG SRC="../navimages/note.gif" WIDTH="20" HEIGHT="20" ALT="Note:" BORDER="0"></TD>
+      <TD>If PRESERVE_COL_NAMES=YES, then special characters and the exact, case-sensitive 
+        spelling of the names are preserved when column names are read from and 
+        passed to the DBMS. In order to use column names that are not valid SAS 
+        names in your SAS program, you must use either the DQUOTE=ANSI option 
+        or the VALIDVARNAME=ANY option. To learn more about these options, see 
+        the 
+        <!--doc reference-->
+        SAS/ACCESS documentation. </TD>
+    </TR>
+  </TABLE>
+  <br>
+</center>
+<!-- InstanceEndEditable -->
+<center><table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">   
+  <tr valign="top"> 
+    <td> 
+      <p><br><center>
+        <form name="form1" method="post" action="">
+          <input type="button" name="Button" value="Close" onClick="JavaScript: self.close()">
+        </form></center>
+</td></tr></table>
+    
+  <!-- #BeginLibraryItem "/Library/nav_popup_bottom.lbi" --><center><table width="100%" cellspacing="0" cellpadding="0">
+      <tr> 
+        <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+        <td><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+      </tr>
+      <tr> 
+        <td>&nbsp;</td>
+        <td valign="top"> <center>
+          <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+          <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute 
+          Inc., Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+            <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+            of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+            Statement</a></font> </font>
+          </center>
+          </td>
+      </tr>
+    </table></center>
+    <p>&nbsp;</p>
+<!-- #EndLibraryItem --></center>
+    </body>
+<!-- InstanceEnd --></html>

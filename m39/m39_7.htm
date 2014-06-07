@@ -1,0 +1,136 @@
+<html><!-- InstanceBegin template="/Templates/practice.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ checkPracticeCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+solutionTitle='<strong>Solution to guided practice:</strong><p>';
+
+solutionText='Submit the following code: ';
+solutionText+='<font color="#003399"><pre>';
+solutionText+='data sasuser.sales;<br>';
+solutionText+='   infile saledata;<br>';
+solutionText+='   input LastName $ 1-7 Month $ 9-11<br>';
+solutionText+='         Residential 13-21 Commercial 23-31;<br>';
+solutionText+='   Total=residential+commercial;<br>';
+solutionText+='   retain CumTotal 1254657;<br>';
+solutionText+='   cumtotal+total;<br>';
+solutionText+='run;<br>';
+solutionText+='proc print data=sasuser.sales;<br>';
+solutionText+='run;<br></pre></font>';
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0" onLoad="sizePractice()" onUnload="resizePage()">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <script>setCourseTitle()</script>
+      </font><br> 
+	  <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+      <script>setLessonTitle()</script>
+      </font></strong>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<font color="#FFFFFF" size="2"><strong>
+<script>document.write(myPage+" of "+eval(myModule))</script></strong></font>&nbsp;&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><script>writeLessonMenu()</script><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><script>writeHelpMenu()</script><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <br>
+      <table cellpadding=0 cellspacing=0 border=0 width="411" align="center">
+        <tr valign="Top"> 
+          <td width="115"><img src="../navimages/tryit.gif" alt="Try It!" width="100" height="50"></td>
+          <td align="left" valign="Top"><!-- InstanceBeginEditable name="task_description" --><strong>Create 
+      a running total of a variable's values using the raw data file to which 
+      the fileref <a href="JavaScript: openOther('../linklib/saledata.htm')">Saledata</a> 
+      has been assigned.</strong><!-- InstanceEndEditable --></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<center>
+ <p>
+<!-- InstanceBeginEditable name="optionalNote" --><!-- InstanceEndEditable -->
+<p> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td> 
+      <ol>
+        <!-- InstanceBeginEditable name="task_steps" -->
+          <li>Copy the program below and paste it into the code editing window. 
+            <pre><font color="#003399">data sasuser.sales;</font>
+<font color="#003399">   infile saledata;</font>
+<font color="#003399">   input LastName $ 1-7 Month $ 9-11</font>
+<font color="#003399">         Residential 13-21</font> 
+<font color="#003399">         Commercial 23-31;</font>
+<font color="#003399">run;</font>
+<font color="#003399">proc print data=sasuser.sales;</font>
+<font color="#003399">run;</font></pre>
+          <li>Create the variable <CODE>Total</CODE> as the sum of <CODE>Residential</CODE> 
+            and <CODE>Commercial</CODE>. Then create the variable <CODE>CumTotal</CODE> 
+            so that it creates a running total of the values for <CODE>Total</CODE>. 
+            Initialize <CODE>CumTotal</CODE> to 1254657. <br>
+            <br>
+          <li>Submit the DATA step and view the output. The last value of <CODE>CumTotal</CODE> 
+            should be <EM>4827169.56</EM>. <!-- InstanceEndEditable -->
+      </ol>
+      
+       </td>
+  </tr>
+</table>
+</center>
+<center>
+  <A HREF="JavaScript:openSolution(solutionTitle+solutionText)" onMouseOver="window.status='Display the solution to the practice.';return true"
+      onMouseOut="window.status='';return true"><IMG SRC="../navimages/bulby.gif" ALT="Solution"
+      WIDTH="60" HEIGHT="60" border="0"></A> <br>
+  <br>
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

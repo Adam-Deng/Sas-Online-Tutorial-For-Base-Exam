@@ -1,0 +1,206 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+dmsInfo1='<strong>Viewing Frame Files</strong> <p> The Results ';
+dmsInfo1+='window does not display links to frame files, and in the Windows environment ';
+dmsInfo1+='only the body file will automatically appear in the internal browser ';
+dmsInfo1+='or your preferred Web browser. ';
+dmsInfo1+='<p>To view the frame file that integrates the body file <strong>and</strong> ';
+dmsInfo1+='the table of contents, select <strong>File';
+dmsInfo1+='<img src="../navimages/arrow.gif" width="14" height="10" alt="then">Open</strong> ';
+dmsInfo1+='from within the internal browser or your preferred Web browser. Then ';
+dmsInfo1+='open the frame file that you specified using FRAME=. In the example ';
+dmsInfo1+='above, this file is <strong>frame.html</strong>, which is stored in the ';
+dmsInfo1+='<strong>Records</strong> directory in the Windows environment. ';
+dmsInfo2='';
+dmsInfo3='';
+
+eg1Info1='The frame file, <strong>frame.html</strong>, is shown below.';
+eg1Info2='';
+eg1Info3='';
+
+eg2Info1='The frame file, <strong>frame.html</strong>, is shown below.';
+eg2Info2='';
+eg2Info3='';
+
+
+
+setInterfaceVersion();
+
+
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br>
+      <font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Creating 
+      HTML Output with a Table of Contents<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+  <table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr valign="top"> 
+      <td> <p>So far in this lesson, you've used the BODY= specification to create 
+          a simple HTML file containing your procedure output. Suppose you want 
+          to create an HTML file that has a table of contents with links to the 
+          output of each specific procedure. You can do this by specifying additional 
+          files in the ODS HTML statement. </p>
+        </td>
+    </tr>
+  </table>
+  <p align="center"> <br>
+  <table border="1" cellspacing="0" cellpadding="10" width="85%" bgcolor="#F7F7DE" title="General form, ODS HTML statement to create a linked 
+        table of contents">
+    <tr> 
+      <td align="left"><strong>General form, ODS HTML statement to create a linked 
+        table of contents:</strong> <blockquote> 
+          <p><font color="#003399"><nobr><strong>ODS HTML <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BODY=</strong><em>body-file-specification</em></nobr><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>CONTENTS=</strong><nobr><em>contents-file-specification</em></nobr><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>FRAME=</strong><nobr><em>frame-file-specification</em></nobr></font><font color="#003399"><nobr><strong>;<br>
+            ODS HTML CLOSE;</strong></nobr></font></p>
+        </blockquote> <p><font color="#003399"><nobr></nobr></font>where </p>
+        <ul>
+          <li><font color="#003399"><em>body-file-specification</em></font> is 
+            the name of an HTML file that contains the procedure output.</li>
+          <li><font color="#003399"><em>contents-file-specification</em></font> 
+            is the name of an HTML file that contains a table of contents with 
+            links to the procedure output.</li>
+          <li><font color="#003399"><em>frame-file-specification</em></font> is 
+            the name of an HTML file that integrates the table of contents and 
+            the body file. If you specify FRAME=, you must also specify CONTENTS=.</li>
+        </ul>
+        <table cellpadding="2">
+          <tr valign="Top"> 
+            <td width="24"><img src="../navimages/note.gif" width="20" height="20" alt="Note:" border="0"></td>
+            <td>To direct the HTML output to a specific storage location, specify 
+              the complete pathname of the HTML file in the <em><font color="#003399">file-specification</font>.</em></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <p align="center"><br>
+  <p> 
+  <center>
+    <table cellpadding=0 cellspacing=0 border=0 width="85%">
+      <tr> 
+        <td align="left"><strong>Example</strong> <p> In the program below, 
+          <ul>
+            <li> the BODY= specification creates <strong>data.html</strong> in 
+              the <strong>c:\records</strong> directory. The body file contains 
+              the results of the two procedures.<br>
+              <br>
+            <li> the CONTENTS= specification creates <strong>toc.html</strong> 
+              in the <strong>c:\records</strong> directory. The table of contents 
+              file has links to each procedure output in the body file.<br>
+              <br>
+            <li> the FRAME= specification creates <strong>frame.html </strong>in 
+              the <strong><strong>c:\records</strong> </strong>directory. The 
+              frame file integrates the table of contents&nbsp;and the body file. 
+          </ul></td>
+      </tr>
+    </table>
+    <p>
+      <img src="images/m18d1g1.gif" width="365" height="247" alt="Frame with TOC and Body File"
+	border="0"> </p>
+    <p> 
+    <table cellpadding=0 cellspacing=0 border=0 width="85%">
+      <tr> 
+        <td align="left"> <pre><font color="#003399">      ods listing close;</font>
+<font color="#003399">      ods html <strong>body='c:\records\data.html'</strong></font>
+         <font color="#003399">      <strong>contents='c:\records\toc.html'</strong></font>
+<font color="#003399">               <strong>frame='c:\records\frame.html';</strong></font>
+      <font color="#003399">proc print data=clinic.admit label;</font>
+         <font color="#003399">var id sex age height weight actlevel;</font>
+<font color="#003399">         label actlevel='Activity Level';</font>
+<font color="#003399">      run;</font>
+<font color="#003399">      proc print data=clinic.stress2;</font>
+         <font color="#003399">var id resthr maxhr rechr;</font>
+<font color="#003399">      run;</font>
+<font color="#003399"><strong>      </strong>ods html close;</font>
+<font color="#003399">      ods listing;</font>
+</pre> 
+        </td>
+      </tr>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding=0 cellspacing=0 border=0 width="85%">
+      <tr> 
+        <td align="left"><script>writeInterface(docInfo1);</script>
+          </td>
+      </tr>
+    </table>
+    <p><br> <img src="images/m18d1s1.gif" width="541" height="337" alt="HTML Frame File"><p>
+      <br>
+  </center>
+  <!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

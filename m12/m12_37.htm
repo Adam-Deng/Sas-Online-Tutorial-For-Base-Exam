@@ -1,0 +1,252 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Reading 
+      Instream Data<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td>
+<p>Throughout this lesson, our program has contained an INFILE statement 
+        that identifies an <strong>external file</strong> to read. </p>
+    </td>
+  </tr>
+</table>
+<p align="center"> 
+<center>
+  <table cellpadding=0 cellspacing=0 border=0 width="85%">
+    <tr> 
+      <td align="left"> 
+        <p> 
+          <pre><font color="#003399">    data sasuser.stress;</font>
+<font color="#003399">       <strong>infile tests;</strong></font>
+<font color="#003399">       input ID 1-4 Name $ 6-25 RestHR 27-29 MaxHR 31-33</font>
+<font color="#003399">             RecHR 35-37 TimeMin 39-40 TimeSec 42-43</font>
+<font color="#003399">             Tolerance $ 45;</font>
+<font color="#003399">       if tolerance='D';</font><font color="#003399">
+</font><font color="#003399">       TotalTime=(timemin*60)+timesec;</font>
+<font color="#003399">    run;</font></pre>
+      </td>
+    </tr>
+  </table>
+  <table cellpadding=0 cellspacing=0 border=0 width="85%">
+    <tr> 
+      <td align="left"> 
+        <p>However, you can also read <strong>instream data lines</strong> that 
+          you enter directly in your SAS program, rather than data that is stored 
+          in an external file. Reading instream data is extremely helpful if you 
+          want to create data and test your programming statements on a few observations 
+          that you can specify according to your needs.</p>
+        <p>To read instream data, you use </p>
+        <ul>
+          <li> 
+            <!--DATALINES in V8 -->
+            a <strong>DATALINES statement</strong> as the last statement in the 
+            DATA step (except for the RUN statement) and immediately preceding 
+            the data lines</li>
+          <li>a <strong>null statement</strong> (a single semicolon) to indicate 
+            the end of the input data. </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <table cellpadding=0 cellspacing=0 border=0 width="85%">
+    <tr> 
+      <td align="left"> 
+        <p> 
+          <pre><font color="#003399">    data sasuser.stress;</font>
+<font color="#003399">       input ID 1-4 Name $ 6-25 RestHR 27-29 MaxHR 31-33</font>
+<font color="#003399">             RecHR 35-37 TimeMin 39-40 TimeSec 42-43</font>
+<font color="#003399">             Tolerance $ 45;
+       <font color="red"><strong>datalines;</strong></font>
+       .
+       .
+       .
+    <em>data lines go here</em></font>
+<font color="#003399">       .
+       .
+       .
+    <font color="red"><strong>;</strong></font></font></pre>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<p align="center"> 
+<center>
+  <table border="1" cellspacing="0" cellpadding="10" width="85%" bgcolor="#F7F7DE" title="General form, DATALINES statement">
+    <tr> 
+      <td align="left"><strong>General form, DATALINES statement:</strong> 
+        <blockquote> <font color="#003399"><nobr><strong>DATALINES</strong><strong>;</strong></nobr></font> 
+        </blockquote>
+        <p> 
+        <table cellpadding="2">
+          <tr valign="Top"> 
+            <td width="24"><img border="0" src="../navimages/note.gif" alt="NOTE:" width="20" height="20"></td>
+            <td>You can use only one DATALINES statement in a DATA step. Use separate 
+              DATA steps to enter multiple sets of data. </td>
+          </tr>
+        </table>
+        <p> 
+		<table cellpadding="2">
+          <tr valign="Top"> 
+            <td width="24"><img border="0" src="../navimages/note.gif" alt="NOTE:" width="20" height="20"></td>
+            <td> You can also use <STRONG><FONT COLOR="#003399">CARDS;</FONT></STRONG>  as the last statement in a DATA step (except for the RUN statement) and 
+			immediately preceding the data lines. The CARDS statement is an alias for the DATALINES statement.</td>
+          </tr>
+        </table>
+		<p>
+        <table cellpadding="2">
+          <tr valign="Top"> 
+            <td width="24"><img border="0" src="../navimages/note.gif" alt="NOTE:" width="20" height="20"></td>
+            <td> If your data contains semicolons, use the DATALINES4 statement 
+              plus a null statement that consists of four semicolons (;;;;).</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"><br>
+<center>
+  <table cellpadding=0 cellspacing=0 border=0 width="85%">
+    <tr> 
+      <td> 
+        <p><strong>Example</strong></p>
+        <p>To read the data for the treadmill stress tests as instream data, you 
+          can submit the following program:</p>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding=0 cellspacing=0 border=0 width="85%">
+    <tr> 
+      <td> 
+        <pre><font color="#003399">    data sasuser.stress;</font>
+<font color="#003399">       input ID 1-4 Name $ 6-25 RestHR 27-29 MaxHR 31-33</font>
+<font color="#003399">             RecHR 35-37 TimeMin 39-40 TimeSec 42-43</font>
+<font color="#003399">             Tolerance $ 45;</font>
+<font color="#003399">       if tolerance='D';</font>
+<font color="#003399">       TotalTime=(timemin*60)+timesec;</font>
+       <font color="red"><strong>datalines;</strong></font>
+     <font color="#003399"><strong>2458 Murray, W            72  185 128 12 38 D</strong></font>
+     <font color="#003399"><strong>2462 Almers, C            68  171 133 10  5 I</strong></font>
+     <font color="#003399"><strong>2501 Bonaventure, T       78  177 139 11 13 I</strong></font>
+     <font color="#003399"><strong>2523 Johnson, R           69  162 114  9 42 S</strong></font>
+     <font color="#003399"><strong>2539 LaMance, K           75  168 141 11 46 D</strong></font>
+     <font color="#003399"><strong>2544 Jones, M             79  187 136 12 26 N</strong></font>
+     <font color="#003399"><strong>2552 Reberson, P          69  158 139 15 41 D</strong></font>
+     <font color="#003399"><strong>2555 King, E              70  167 122 13 13 I</strong></font>
+     <font color="#003399"><strong>2563 Pitts, D             71  159 116 10 22 S</strong></font>
+     <font color="#003399"><strong>2568 Eberhardt, S         72  182 122 16 49 N</strong></font>
+     <font color="#003399"><strong>2571 Nunnelly, A          65  181 141 15  2 I</strong></font>
+     <font color="#003399"><strong>2572 Oberon, M            74  177 138 12 11 D</strong></font>
+     <font color="#003399"><strong>2574 Peterson, V          80  164 137 14  9 D</strong></font>
+     <font color="#003399"><strong>2575 Quigley, M           74  152 113 11 26 I</strong></font>
+     <font color="#003399"><strong>2578 Cameron, L           75  158 108 14 27 I</strong></font>
+     <font color="#003399"><strong>2579 Underwood, K         72  165 127 13 19 S</strong></font>
+     <font color="#003399"><strong>2584 Takahashi, Y         76  163 135 16  7 D</strong></font>
+     <font color="#003399"><strong>2586 Derber, B            68  176 119 17 35 N</strong></font>
+     <font color="#003399"><strong>2588 Ivan, H              70  182 126 15 41 N</strong></font>
+     <font color="#003399"><strong>2589 Wilcox, E            78  189 138 14 57 I</strong></font>
+     <font color="#003399"><strong>2595 Warren, C            77  170 136 12 10 S</strong></font>
+     <font color="red"><strong>;</strong></font>
+</pre>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="2" width="85%">
+    <tr valign="Top"> 
+      <td width="41"><img border="0" src="../navimages/alert.gif" alt="NOTE:" width="37" height="32"></td>
+      <td> Notice that you do not need a RUN statement following the null statement 
+        (the semicolon after the data lines). The null statement functions as 
+        a step boundary when the DATALINES statement is used, so the DATA step 
+        is executed as soon as SAS encounters it. If you do place a RUN 
+        statement after the null statement, any statements between the null statement 
+        and the RUN statement are <strong>not</strong> executed as part of the 
+        DATA step.</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+</center>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

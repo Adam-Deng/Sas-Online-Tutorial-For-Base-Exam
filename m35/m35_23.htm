@@ -1,0 +1,370 @@
+<html><!-- InstanceBegin template="/Templates/informationObject.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+ setPageTitle();
+ setCookie();
+ 
+// Drop down menu link- © Dynamic Drive (www.dynamicdrive.com)
+// For full source code and 100's more DHTML scripts, visit http://www.dynamicdrive.com
+// Credit MUST stay intact for use -->
+
+</SCRIPT>
+
+<!-- InstanceBeginEditable name="extrascript" --> 
+<SCRIPT LANGUAGE="JavaScript">
+</SCRIPT>
+<!-- InstanceEndEditable -->
+
+<link rel="stylesheet" href="../tut.css">
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" rightmargin="0" bgcolor="#FFFFF0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../navimages/banner.gif">
+  <tr> 
+    <td height="49" colspan="2" nowrap><font color="#A6CAF0" size="-1" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;
+      <SCRIPT>setCourseTitle()</SCRIPT>
+      </font><br>
+      <strong><font color="#FFFFFF" face="Arial, Helvetica, sans-serif" size="-1">&nbsp;&nbsp;
+	  <SCRIPT>setLessonTitle()</SCRIPT>
+      </FONT></STRONG>&nbsp;<img src="../navimages/bullet.gif" width="8" height="8" alt="">&nbsp;<FONT color="#FFFFFF" size="2"><STRONG>
+<script>document.write(myPage+" of "+eval(myModule))</script></STRONG></FONT>&nbsp;&nbsp;</td>
+    <td width="357" rowspan="3" valign="bottom"><img src="../navimages/logo_top.gif" width="357" height="72" align="bottom" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" valign="bottom" nowrap><img src="../navimages/tableft.gif" width="9" height="19" alt=""><a href="JavaScript: prevPage()" onMouseOver="rOver('back');window.status='Display the previous page.';return true" onMouseOut="rOut('back');window.status='';return true" accesskey="b"><img src="../navimages/back.gif" alt="back" width="30" height="19" border="0" name="back"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next');window.status='Display the next page.';return true" onMouseOut="rOut('next');window.status='';return true" accesskey="n"><img src="../navimages/next.gif" alt="next" width="30" height="19" border="0" name="next"></a><SCRIPT>writeLessonMenu()</SCRIPT><a href="../paths.htm" onMouseOver="rOver('path');window.status='Display the Learning Path.';return true" onMouseOut="rOut('path');window.status='';return true" accesskey="p"><img src="../navimages/path.gif" alt="Learning Path" width="48" height="19" border="0" name="path"></a><SCRIPT>writeHelpMenu()</SCRIPT><img src="../navimages/tabright.gif" width="28" height="19" alt=""></td>
+  </tr>
+  <tr> 
+    <td height="3" colspan="2" valign="bottom"><img src="../navimages/border.gif" width="100%" height="3" alt=""></td>
+  </tr>
+  <tr valign="top" bgcolor="#FFFFF0"> 
+    <td nowrap>&nbsp;&nbsp;&nbsp;</td>
+    <td valign="middle"><br>
+      <img src="../navimages/cleardot.gif" width="411" height="1" alt=""><br><font color="#003399" size="3" face="Arial, Helvetica, sans-serif"><strong><!-- InstanceBeginEditable name="TopicTitle" -->Creating 
+      Multidimensional Arrays<!-- InstanceEndEditable --></strong></font> 
+      <!-- InstanceBeginEditable name="continued" --><font color="#003399" size="3" face="Arial, Helvetica, sans-serif">(continued)</font><!-- InstanceEndEditable --></td>
+    <td><img src="../navimages/arch.gif" width="357" height="64" align="top" alt=""></td>
+  </tr>
+</table><br>
+<center>
+  <!-- InstanceBeginEditable name="content" --> 
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td>
+<p><strong>Defining a Multidimensional Array</strong> </p>
+      <p> To define a multidimensional array, you specify the number of elements 
+        in each dimension, separated by a comma. This ARRAY statement defines 
+        a two-dimensional array: 
+      <pre><font color="#003399">     array new{3,4} x1-x12;</font>
+</pre>
+      <p> In a two-dimensional array, the two dimensions can be thought of as 
+        a table of rows and columns.
+    </td>
+  </tr>
+</table>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td> 
+        <p> 
+        <pre><font color="#003399">     array new{<strong><em>r</em></strong>,<strong><em>c</em></strong>} x1-x12;</font>
+</pre>
+        <p> 
+      </td>
+      <td> 
+        <p>&nbsp;</p>
+        <table width="100">
+          <tr>
+            <td align="center" colspan=2><font color="#0000ff"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;columns</font></td>
+          </tr>
+          <tr>
+            <td valign="center"><font color="#0000ff">rows</font></td>
+            <td> 
+              <table width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+                <tr> 
+                  <td align="center"><font color="#003399">x1&nbsp;</font></td>
+                  <td align="center"><font color="#003399">x2</font></td>
+                  <td align="center"><font color="#003399">x3</font></td>
+                  <td align="center"><font color="#003399">x4</font></td>
+                </tr>
+                <tr> 
+                  <td align="center"><font color="#003399">x5</font></td>
+                  <td align="center"><font color="#003399">x6</font></td>
+                  <td align="center"><font color="#003399">x7</font></td>
+                  <td align="center"><font color="#003399">x8</font></td>
+                </tr>
+                <tr> 
+                  <td align="center"><font color="#003399">x9</font></td>
+                  <td align="center"><font color="#003399">x10</font></td>
+                  <td align="center"><font color="#003399">x11</font></td>
+                  <td align="center"><font color="#003399">x12</font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <p><br>
+        </p>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>The first dimension in the ARRAY statement specifies the number of rows.</td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td> 
+        <pre>               <strong>V</strong>
+<font color="#003399">     array new{<strong>3</strong>,4} x1-x12;</font>
+</pre>
+      </td>
+      <td>
+<table width="100">
+          <tr>
+            <td valign="center"><font color="#0000ff">rows</font></td>
+            <td> 
+              <table width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+                <tr bgcolor="#CCCC99"> 
+                  <td align="center"><font color="#003399">x1&nbsp;</font></td>
+                  <td align="center"><font color="#003399">x2</font></td>
+                  <td align="center"><font color="#003399">x3</font></td>
+                  <td align="center"><font color="#003399">x4</font></td>
+                </tr>
+                <tr> 
+                  <td align="center"><font color="#003399">x5</font></td>
+                  <td align="center"><font color="#003399">x6</font></td>
+                  <td align="center"><font color="#003399">x7</font></td>
+                  <td align="center"><font color="#003399">x8</font></td>
+                </tr>
+                <tr bgcolor="#CCCC99"> 
+                  <td align="center"><font color="#003399">x9</font></td>
+                  <td align="center"><font color="#003399">x10</font></td>
+                  <td align="center"><font color="#003399">x11</font></td>
+                  <td align="center"><font color="#003399">x12</font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>The second dimension specifies the number of columns.</td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td> 
+        <pre>                 <strong>V</strong>
+<font color="#003399">     array new{3,<strong>4</strong>} x1-x12;</font>
+</pre>
+      </td>
+      <td>
+<table width="100">
+          <tr>
+            <td align="center" colspan=2><font color="#0000ff">columns</font></td>
+          </tr>
+          <tr>
+            <td> 
+              <table width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+                <tr> 
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x1&nbsp;</font></td>
+                  <td align="center"><font color="#003399">x2</font></td>
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x3</font></td>
+                  <td align="center"><font color="#003399">x4</font></td>
+                </tr>
+                <tr> 
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x5</font></td>
+                  <td align="center"><font color="#003399">x6</font></td>
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x7</font></td>
+                  <td align="center"><font color="#003399">x8</font></td>
+                </tr>
+                <tr> 
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x9</font></td>
+                  <td align="center"><font color="#003399">x10</font></td>
+                  <td align="center" bgcolor="#CCCC99"><font color="#003399">x11</font></td>
+                  <td align="center"><font color="#003399">x12</font></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>You can reference any element of the array by specifying the two dimensions. 
+        In the example below, you can perform an action on the variable <code>x7</code> 
+        by specifying the array reference <code>new(2,3)</code>. You can easily 
+        locate the array element in the table by finding the row (2), then the 
+        column (3).</td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td> 
+        <pre><font color="#003399">     array new{3,4} x1-x12;</font>
+<font color="#003399">     <strong>new(2,3)=0;</strong></font>
+</pre>
+      </td>
+      <td>
+<table align="left" width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+          <tr bgcolor="#FFFFFF"> 
+            <td align="center"><font color="#003399">x1&nbsp;</font></td>
+            <td align="center"><font color="#003399">x2</font></td>
+            <td align="center"><font color="#003399">x3</font></td>
+            <td align="center"><font color="#003399">x4</font></td>
+          </tr>
+          <tr> 
+            <td align="center"><font color="#003399">x5</font></td>
+            <td align="center"><font color="#003399">x6</font></td>
+            <td align="center" bgcolor="#CCCC99"><font color="#003399">x7</font></td>
+            <td align="center"><font color="#003399">x8</font></td>
+          </tr>
+          <tr> 
+            <td align="center"><font color="#003399">x9</font></td>
+            <td align="center"><font color="#003399">x10</font></td>
+            <td align="center"><font color="#003399">x11</font></td>
+            <td align="center"><font color="#003399">x12</font></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>When you define a two-dimensional array, the array elements are grouped 
+        in the order in which they are listed in the ARRAY statement. For example, 
+        the array elements <code>x1</code> through <code>x4</code> can be thought 
+        of as the first row of the table.</td>
+    </tr>
+  </table>
+</center>
+<p align="center"> 
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td> 
+        <p> 
+        <pre>                     <strong>V  V  V  V</strong>
+<font color="#003399">     array new{3,4} <strong>x1 x2 x3 x4</strong> x5 x6 x7 x8 x9 x10 x11 x12;</font>
+</pre>
+      </td>
+    </tr>
+  </table>
+  <table align="center" width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+    <tr bgcolor="#CCCC99"> 
+      <td align="center"><font color="#003399">x1&nbsp;</font></td>
+      <td align="center"><font color="#003399">x2</font></td>
+      <td align="center"><font color="#003399">x3</font></td>
+      <td align="center"><font color="#003399">x4</font></td>
+    </tr>
+    <tr> 
+      <td align="center"><font color="#003399">x5</font></td>
+      <td align="center"><font color="#003399">x6</font></td>
+      <td align="center"><font color="#003399">x7</font></td>
+      <td align="center"><font color="#003399">x8</font></td>
+    </tr>
+    <tr> 
+      <td align="center"><font color="#003399">x9</font></td>
+      <td align="center"><font color="#003399">x10</font></td>
+      <td align="center"><font color="#003399">x11</font></td>
+      <td align="center"><font color="#003399">x12</font></td>
+    </tr>
+  </table>
+</center>
+<p align="center"> <br>
+  <br>
+<center>
+  <table cellpadding="0" cellspacing="0" border="0" width="85%">
+    <tr> 
+      <td>The elements <code>x5</code> through <code>x8</code> become the second 
+        row of the table, and so on. 
+        <pre>                                 <strong>V  V  V  V</strong>
+<font color="#003399">     array new{3,4} x1 x2 x3 x4 <strong>x5 x6 x7 x8</strong> x9 x10 x11 x12;</font>
+</pre>
+      </td>
+    </tr>
+  </table>
+  <table align="center" width="100" bgcolor="white" border="1" cellpadding="5" cellspacing="0" title="Array">
+    <tr bgcolor="#FFFFFF"> 
+      <td align="center"><font color="#003399">x1&nbsp;</font></td>
+      <td align="center"><font color="#003399">x2</font></td>
+      <td align="center"><font color="#003399">x3</font></td>
+      <td align="center"><font color="#003399">x4</font></td>
+    </tr>
+    <tr bgcolor="#CCCC99"> 
+      <td align="center"><font color="#003399">x5</font></td>
+      <td align="center"><font color="#003399">x6</font></td>
+      <td align="center"><font color="#003399">x7</font></td>
+      <td align="center"><font color="#003399">x8</font></td>
+    </tr>
+    <tr> 
+      <td align="center"><font color="#003399">x9</font></td>
+      <td align="center"><font color="#003399">x10</font></td>
+      <td align="center"><font color="#003399">x11</font></td>
+      <td align="center"><font color="#003399">x12</font></td>
+    </tr>
+  </table>
+</center>
+<p align="center"> <br>
+  <br>
+  <br>
+<!-- InstanceEndEditable --> 
+</center>
+<!-- #BeginLibraryItem "/Library/nav_regular_bottom.lbi" -->
+<table width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+    <td colspan="2"><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top"> <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+      <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute Inc., 
+      Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+        <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+        of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+        Statement</a></font>
+      </font></td>
+    <td width="60"> 
+      <div align="right"><a href="JavaScript: prevPage()" onMouseOver="rOver('back2');window.status='Display the previous page.';return true" onMouseOut="rOut('back2');window.status='';return true" accesskey="b"><img src="../navimages/back2.gif" alt="back" width="30" height="19" border="0" name="back2"></a><a href="JavaScript: nextPage()" onMouseOver="rOver('next2');window.status='Display the next page.';return true" onMouseOut="rOut('next2');window.status='';return true" accesskey="n"><img src="../navimages/next2.gif" alt="next" width="30" height="19" border="0" name="next2"></a></div>
+    </td>
+  </tr>
+</table><p>&nbsp;</p>
+<script>writeLessonDiv()</script>
+<script>writeHelpDiv()</script>
+<!-- #EndLibraryItem --></body>
+<!-- InstanceEnd --></html>

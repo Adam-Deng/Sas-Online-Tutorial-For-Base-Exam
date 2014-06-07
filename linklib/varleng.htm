@@ -1,0 +1,115 @@
+<html><!-- InstanceBegin template="/Templates/popup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript" SRC="../tut.js">
+</SCRIPT>
+<link rel="stylesheet" href="../tut.css">
+
+<!-- InstanceBeginEditable name="title" --><TITLE>Variable Types and Lengths Produced When Not Explicitly Set </TITLE><!-- InstanceEndEditable -->
+
+
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</HEAD>
+<body bgcolor="#FFFFF0" topmargin="0" leftmargin="0" onLoad="self.focus()">
+<table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr valign="top"> 
+    <td><br>
+      <strong><font size="3" color="#003399"><!-- InstanceBeginEditable name="popup_title" --><B><I>Variable 
+      Types and Lengths Produced When Not Explicitly Set</I></B> <!-- InstanceEndEditable --></font></strong> 
+    </td>
+</tr>
+</table><p> 
+<!-- InstanceBeginEditable name="contents" -->
+<TABLE width="85%" border="1" align="center" cellpadding="2" cellspacing="0" title="Variable Lengths">
+  <CAPTION align="top">
+  <B><I> </I></B> 
+  </CAPTION>
+  <TR valign="bottom" bgcolor="#F7F7DE"> 
+    <TH  align="LEFT" valign="TOP" ><B>Expression</B></TH>
+    <TH  align="LEFT" valign="TOP" ><B>Example</B></TH>
+    <TH  align="LEFT" valign="TOP" ><B>Resulting Type of X</B></TH>
+    <TH  align="LEFT" valign="TOP" ><B>Resulting Length of X</B></TH>
+    <TH  align="LEFT" valign="TOP" ><B>Explanation</B></TH>
+  </TR>
+  <TR valign="top" bgcolor="#FFFFFF"> 
+    <TD  align="LEFT" valign="TOP">Character variable</TD>
+    <TD  align="LEFT" valign="TOP"><CODE><B>length a $ 4;</B></CODE> <P><CODE><B>x=a;</B></CODE><BR>
+    </TD>
+    <TD  align="LEFT" valign="TOP">Character variable</TD>
+    <TD  align="LEFT" valign="TOP">4</TD>
+    <TD  align="LEFT" valign="TOP">Length of source variable</TD>
+  </TR>
+  <TR valign="top" bgcolor="#FFFFFF"> 
+    <TD  align="LEFT" valign="TOP">Character literal (character constant)</TD>
+    <TD  align="LEFT" valign="TOP"><CODE><B>x='ABC';</B></CODE><BR> <P><CODE><B>x='ABCDE';</B></CODE><BR>
+      <P><BR>
+    </TD>
+    <TD  align="LEFT" valign="TOP">Character variable</TD>
+    <TD  align="LEFT" valign="TOP">3</TD>
+    <TD  align="LEFT" valign="TOP">Length of first literal (constant) encountered</TD>
+  </TR>
+  <TR valign="top" bgcolor="#FFFFFF"> 
+    <TD  align="LEFT" valign="TOP">Concatenation of variables</TD>
+    <TD  align="LEFT" valign="TOP"><CODE><B>length a $ 4</B></CODE><BR> <P><CODE><B>b 
+        $ 6</B></CODE>
+      <P><CODE><B>c $ 2;</B></CODE>
+      <P><CODE><B>x=a||b||c;</B></CODE></TD>
+    <TD  align="LEFT" valign="TOP">Character variable</TD>
+    <TD  align="LEFT" valign="TOP">12</TD>
+    <TD  align="LEFT" valign="TOP">Sum of the lengths of all variables</TD>
+  </TR>
+  <TR valign="top" bgcolor="#FFFFFF"> 
+    <TD  align="LEFT" valign="TOP">Concatenation of variables and literal</TD>
+    <TD  align="LEFT" valign="TOP"><CODE><B>length a $ 4; </B></CODE> <P><CODE><B>x=a||'CAT';</B></CODE>
+      <P><CODE><B>x=a||'CATNIP';</B></CODE></TD>
+    <TD  align="LEFT" valign="TOP">Character variable</TD>
+    <TD  align="LEFT" valign="TOP">7</TD>
+    <TD  align="LEFT" valign="TOP">Sum of the lengths of variables and literals 
+      (constants) encountered in first assignment statement</TD>
+  </TR>
+  <TR valign="top" bgcolor="#FFFFFF"> 
+    <TD  align="LEFT" valign="TOP">Numeric variable</TD>
+    <TD  align="LEFT" valign="TOP"><CODE><B>length a 4;</B></CODE> <P><CODE><B>x=a;</B></CODE><BR>
+    </TD>
+    <TD  align="LEFT" valign="TOP">Numeric variable</TD>
+    <TD  align="LEFT" valign="TOP">8</TD>
+    <TD  align="LEFT" valign="TOP"><p>Default numeric length (8 bytes unless otherwise 
+        specified)</p>
+      <p>Note: In general, it is not recommended that you change the default length 
+        of numeric variables, as this as can affect numeric precision. See the 
+        SAS documentation for more information.</p></TD>
+  </TR>
+</TABLE>
+
+   <!-- InstanceEndEditable -->
+<center><table width="85%" border="0" cellpadding="0" cellspacing="0" align="center">   
+  <tr valign="top"> 
+    <td> 
+      <p><br><center>
+        <form name="form1" method="post" action="">
+          <input type="button" name="Button" value="Close" onClick="JavaScript: self.close()">
+        </form></center>
+</td></tr></table>
+    
+  <!-- #BeginLibraryItem "/Library/nav_popup_bottom.lbi" --><center><table width="100%" cellspacing="0" cellpadding="0">
+      <tr> 
+        <td width="14"><img src="../navimages/linebox.gif" width="14" height="7" alt=""></td>
+        <td><img src="../navimages/linegray.gif" width="100%" height="7" alt=""></td>
+      </tr>
+      <tr> 
+        <td>&nbsp;</td>
+        <td valign="top"> <center>
+          <font size="1" color="gray" face="Verdana, Arial, Helvetica, Sans Serif"><a
+	  class="copyrightlink" href="JavaScript: openOther('../copyrite.htm')"><font face="Arial, Helvetica, sans-serif">Copyright</font></a> 
+          <font face="Arial, Helvetica, sans-serif">&copy; 2003 SAS Institute 
+          Inc., Cary, NC, USA. All rights reserved.</font></font> <font face="Arial, Helvetica, sans-serif"><br>
+            <font size="1" color="gray"><a class="copyrightlink" href="http://www.sas.com/Copyright.html" target="_blank">Terms 
+            of Use &amp; Legal Information</a> | <a class="copyrightlink" href="http://www.sas.com/Privacy.html" target="_blank">Privacy 
+            Statement</a></font> </font>
+          </center>
+          </td>
+      </tr>
+    </table></center>
+    <p>&nbsp;</p>
+<!-- #EndLibraryItem --></center>
+    </body>
+<!-- InstanceEnd --></html>
